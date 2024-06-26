@@ -1,0 +1,36 @@
+@media only screen and (min-width: 0rem) {
+  .about-img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  .about-img {
+    display: block;
+    width: 50%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 0rem) {
+  .mobile-call {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  .mobile-call {
+    display: none;
+  }
+}
