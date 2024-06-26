@@ -451,7 +451,7 @@
   #cs-navigation .cs-top-container {
     width: 100%;
     max-width: 80rem;
-    padding: 1rem 0;
+    padding: 1rem;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     display: flex;
@@ -511,7 +511,7 @@
     height: 5.8125rem;
     max-width: 80rem;
     margin: auto;
-    padding: 1rem 0;
+    padding: 1rem;
     /* prevents padding from affectin gheight */
     box-sizing: border-box;
     display: flex;
@@ -641,6 +641,15 @@
   }
 }
 
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #cs-navigation .cs-top-container {
+    padding: 1rem 0;
+  }
+  #cs-navigation .cs-container {
+    padding: 1rem 0;
+  }
+}
 /*-- -------------------------- -->
 <---         Services           -->
 <--- -------------------------- -*/
