@@ -13,6 +13,28 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/override.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11193323869"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'AW-11193323869')
+    </script>
+    <script>
+      function gtag_report_conversion_contact() {
+        gtag('event', 'conversion', {
+          send_to: 'AW-11193323869/QhJYCN2gmL4ZEN2istkp',
+        })
+        return false
+      }
+    </script>
   </head>
   <body>
     <!-- ============================================ -->
@@ -143,6 +165,11 @@
         <div class="cs-content">
           <span class="cs-topper">Services</span>
           <h2 class="cs-title">We Offer Great Ways to Improve Your Car</h2>
+          <p class="cs-text">
+            We offer engine modifications, suspension upgrades, and other
+            performance upgrades. Our commitment to excellence ensures that you
+            receive the best possible results, every time.
+          </p>
         </div>
         <ul class="cs-card-group">
           <li class="cs-item">
@@ -159,7 +186,7 @@
                 />
               </svg>
             </picture>
-            <h3 class="cs-h3">Auto Repair</h3>
+            <h3 class="cs-h3">Repair & Maintenance</h3>
             <p class="cs-item-text">
               Trust our expert mechanics for reliable auto repair services. From
               routine maintenance to complex diagnostics, we keep your vehicle
@@ -600,7 +627,11 @@
                 placeholder="Write message..."
               ></textarea>
             </label>
-            <button class="cs-button-solid cs-submit" type="submit">
+            <button
+              class="cs-button-solid cs-submit"
+              type="submit"
+              onclick="return gtag_report_conversion_contact()"
+            >
               Send Message
             </button>
           </form>
@@ -843,7 +874,7 @@
               class="cs-nav-link"
               href="#services-1064"
               style="pointer-events: none"
-              >Dyno Pull
+              >Repair & Maintenance
             </a>
           </li>
           <li class="cs-nav-li">
@@ -851,7 +882,7 @@
               class="cs-nav-link"
               href="#services-1064"
               style="pointer-events: none"
-              >Dyno Testing
+              >Performance Upgrades
             </a>
           </li>
           <li class="cs-nav-li">
@@ -859,7 +890,39 @@
               class="cs-nav-link"
               href="#services-1064"
               style="pointer-events: none"
-              >LS Engine Swaps</a
+              >Supercharger Installations
+            </a>
+          </li>
+          <li class="cs-nav-li">
+            <a
+              class="cs-nav-link"
+              href="#services-1064"
+              style="pointer-events: none"
+              >Turbocharger Upgrades
+            </a>
+          </li>
+          <li class="cs-nav-li">
+            <a
+              class="cs-nav-link"
+              href="#services-1064"
+              style="pointer-events: none"
+              >Dyno Tuning
+            </a>
+          </li>
+          <li class="cs-nav-li">
+            <a
+              class="cs-nav-link"
+              href="#services-1064"
+              style="pointer-events: none"
+              >Dyno Testing</a
+            >
+          </li>
+          <li class="cs-nav-li">
+            <a
+              class="cs-nav-link"
+              href="#services-1064"
+              style="pointer-events: none"
+              >Dyno Pull</a
             >
           </li>
           <li class="cs-nav-li">
@@ -875,15 +938,7 @@
               class="cs-nav-link"
               href="#services-1064"
               style="pointer-events: none"
-              >Turbocharger Upgrades
-            </a>
-          </li>
-          <li class="cs-nav-li">
-            <a
-              class="cs-nav-link"
-              href="#services-1064"
-              style="pointer-events: none"
-              >Supercharger Installations</a
+              >LS Engine Swaps</a
             >
           </li>
         </ul>
