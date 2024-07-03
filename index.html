@@ -26,14 +26,6 @@
 
       gtag('config', 'AW-11193323869')
     </script>
-    <script>
-      function gtag_report_conversion_contact() {
-        gtag('event', 'conversion', {
-          send_to: 'AW-11193323869/QhJYCN2gmL4ZEN2istkp',
-        })
-        return false
-      }
-    </script>
   </head>
   <body>
     <!-- ============================================ -->
@@ -568,7 +560,7 @@
             id="cs-form-1105"
             name="Contact Form"
             method="post"
-            netlify
+            data-netlify="true"
           >
             <label class="cs-label">
               Name
@@ -613,11 +605,7 @@
                 placeholder="Write message..."
               ></textarea>
             </label>
-            <button
-              class="cs-button-solid cs-submit"
-              type="submit"
-              onclick="return gtag_report_conversion_contact()"
-            >
+            <button class="cs-button-solid cs-submit" type="submit">
               Send Message
             </button>
           </form>
