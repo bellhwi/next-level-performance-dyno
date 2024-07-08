@@ -806,6 +806,11 @@
     align-items: flex-start;
   }
 
+  #why-1166 .cs-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
   #why-1166 .cs-text {
     margin-bottom: 1rem;
   }
@@ -980,6 +985,11 @@
   #why-1166 .cs-content {
     width: 47%;
   }
+
+  #why-1166 .cs-title {
+    text-align: left;
+  }
+
   #why-1166 .cs-image-group {
     font-size: min(1vw, 1em);
     width: 32.625em;
