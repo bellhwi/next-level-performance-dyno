@@ -3,13 +3,15 @@ var CSbody = document.querySelector('body')
 const CSnavbarMenu = document.querySelector('#cs-navigation')
 const CShamburgerMenu = document.querySelector('#cs-navigation .cs-toggle')
 
-CShamburgerMenu.addEventListener('click', function () {
-  CShamburgerMenu.classList.toggle('cs-active')
-  CSnavbarMenu.classList.toggle('cs-active')
-  CSbody.classList.toggle('cs-open')
-  // run the function to check the aria-expanded value
-  ariaExpanded()
-})
+if (CShamburgerMenu !== null) {
+  CShamburgerMenu.addEventListener('click', function () {
+    CShamburgerMenu.classList.toggle('cs-active')
+    CSnavbarMenu.classList.toggle('cs-active')
+    CSbody.classList.toggle('cs-open')
+    // run the function to check the aria-expanded value
+    ariaExpanded()
+  })
+}
 
 // checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not
 function ariaExpanded() {
@@ -85,13 +87,15 @@ function detectColorScheme() {
 // run on page load
 detectColorScheme()
 
-// add event listener to the dark mode button toggle
-document.getElementById('dark-mode-toggle').addEventListener('click', () => {
-  // on click, check localStorage for the dark mode value, use to apply the opposite of what's saved
-  localStorage.getItem('theme') === 'light'
-    ? enableDarkMode()
-    : disableDarkMode()
-})
+if (document.getElementById('dark-mode-toggle') !== null) {
+  // add event listener to the dark mode button toggle
+  document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+    // on click, check localStorage for the dark mode value, use to apply the opposite of what's saved
+    localStorage.getItem('theme') === 'light'
+      ? enableDarkMode()
+      : disableDarkMode()
+  })
+}
 
 // Handle form submission
 const handleSubmit = (event) => {
@@ -116,3 +120,6 @@ const handleSubmit = (event) => {
 }
 
 document.querySelector('form').addEventListener('submit', handleSubmit)
+
+// Set the current year in the footer
+document.getElementById('current-year').textContent = new Date().getFullYear()
