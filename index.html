@@ -35,7 +35,7 @@
     <header id="cs-navigation">
       <div class="cs-container">
         <!--Nav Logo-->
-        <a href="#" class="cs-logo" aria-label="back to home">
+        <a href="index.html" class="cs-logo" aria-label="back to home">
           <img
             src="img/logo.png"
             alt="logo"
@@ -59,24 +59,24 @@
           <div class="cs-ul-wrapper">
             <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
               <li class="cs-li">
-                <a href="#home" class="cs-li-link"> Home </a>
+                <a href="index.html" class="cs-li-link"> Home </a>
               </li>
               <li class="cs-li">
-                <a href="#services" class="cs-li-link"> Services </a>
+                <a href="about.html" class="cs-li-link"> About </a>
               </li>
               <li class="cs-li">
-                <a href="#about" class="cs-li-link"> About </a>
+                <a href="services.html" class="cs-li-link"> Services </a>
               </li>
+
               <li class="cs-li">
-                <a href="#testimonials" class="cs-li-link"> Testimonials</a>
-              </li>
-              <li class="cs-li">
-                <a href="#faq" class="cs-li-link"> FAQ </a>
+                <a href="gallery.html" class="cs-li-link"> Gallery</a>
               </li>
             </ul>
           </div>
         </nav>
-        <a href="#contact" class="cs-button-solid cs-nav-button">CONTACT US</a>
+        <a href="contact.html" class="cs-button-solid cs-nav-button"
+          >CONTACT US</a
+        >
         <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
         <button id="dark-mode-toggle" aria-label="dark mode toggle">
           <svg
@@ -119,17 +119,17 @@
             Turn your premium ride into a thrilling powerhouse with Next Level
             Performance & Dyno.
           </p>
-          <a href="#contact" class="cs-button-solid">GET A QUOTE </a>
+          <a href="contact.html" class="cs-button-solid">GET A QUOTE </a>
         </div>
       </div>
 
       <!-- Background Image -->
       <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="img/hero.jpg" />
-        <source media="(min-width: 601px)" srcset="img/hero.jpg" />
+        <source media="(max-width: 600px)" srcset="img/test.jpg" />
+        <source media="(min-width: 601px)" srcset="img/test.jpg" />
         <img
           decoding="async"
-          src="img/hero.jpg"
+          src="img/test.jpg"
           alt="mechanic"
           width="2250"
           height="1500"
@@ -138,300 +138,270 @@
       </picture>
     </section>
     <!-- ============================================ -->
-    <!--                  Services                    -->
+    <!--                  Car Brands                  -->
     <!-- ============================================ -->
-
-    <section id="services">
+    <section class="brands">
       <div class="cs-container">
-        <div class="cs-content">
-          <h2 class="cs-title">Services</h2>
+        <h2 class="cs-title">Worked With</h2>
+        <div class="cs-brand-list">
+          <li class="cs-brand-item">
+            <img src="img/brands/corvette.webp" alt="corvette logo" />
+          </li>
+          <li class="cs-brand-item">
+            <img src="img/brands/mustang.webp" alt="mustang logo" />
+          </li>
+          <li class="cs-brand-item">
+            <img
+              src="img/brands/hellcat.webp"
+              alt="hellcat logo"
+              style="width: 40%"
+            />
+          </li>
+          <li class="cs-brand-item">
+            <img
+              src="img/brands/shelby.webp"
+              alt="shelby logo"
+              style="width: 35%"
+            />
+          </li>
         </div>
-        <ul class="cs-card-group">
-          <li class="cs-item">
-            <picture class="cs-icon-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="48px"
-                viewBox="0 -960 960 960"
-                width="48px"
-                fill="#fff"
-              >
-                <path
-                  d="M450-80v-120H160v-60h640v60H510v120h-60ZM325.18-503q12.82 0 21.32-8.68 8.5-8.67 8.5-21.5 0-12.82-8.68-21.32-8.67-8.5-21.5-8.5-12.82 0-21.32 8.68-8.5 8.67-8.5 21.5 0 12.82 8.68 21.32 8.67 8.5 21.5 8.5Zm310 0q12.82 0 21.32-8.68 8.5-8.67 8.5-21.5 0-12.82-8.68-21.32-8.67-8.5-21.5-8.5-12.82 0-21.32 8.68-8.5 8.67-8.5 21.5 0 12.82 8.68 21.32 8.67 8.5 21.5 8.5ZM200-616l66-192q5-14 16.5-23t25.5-9h344q14 0 25.5 9t16.5 23l66 192v272q0 10.5-6.75 17.25T736-320h-12q-10.5 0-17.25-6.75T700-344v-64H260v64q0 10.5-6.75 17.25T236-320h-12q-10.5 0-17.25-6.75T200-344v-272Zm77-42h407l-41-122H317l-40 122Zm-17 60v130-130Zm0 130h440v-130H260v130Z"
-                />
-              </svg>
-            </picture>
-            <h3 class="cs-h3">Auto Repair</h3>
-            <p class="cs-item-text">
-              Trust our expert mechanics for reliable auto repair services. From
-              routine maintenance to complex diagnostics, we keep your vehicle
-              running smoothly.
-            </p>
-          </li>
-          <li class="cs-item">
-            <picture class="cs-icon-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="48px"
-                viewBox="0 -960 960 960"
-                width="48px"
-                fill="#fff"
-              >
-                <path
-                  d="M705-128 447-388q-23 8-46 13t-47 5q-97.08 0-165.04-67.67Q121-505.33 121-602q0-31 8.16-60.39T152-718l145 145 92-86-149-149q25.91-15.16 54.96-23.58Q324-840 354-840q99.17 0 168.58 69.42Q592-701.17 592-602q0 24-5 47t-13 46l259 258q11 10.96 11 26.48T833-198l-76 70q-10.7 11-25.85 11Q716-117 705-128Zm28-57 40-40-273-273q16-21 24-49.5t8-54.5q0-75-55.5-127T350-782l102 104q9 9 8.5 21.5T451-635L318-510q-9.27 8-21.64 8-12.36 0-20.36-8l-98-97q3 77 54.67 127T354-430q25 0 53-8t49-24l277 277ZM476-484Z"
-                />
-              </svg>
-            </picture>
-            <h3 class="cs-h3">Auto Maintenance</h3>
-            <p class="cs-item-text">
-              Count on our skilled team for thorough auto maintenance solutions.
-              From regular upkeep to detailed inspections, we're dedicated to
-              keeping your vehicle in top shape.
-            </p>
-          </li>
-          <li class="cs-item">
-            <picture class="cs-icon-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="48px"
-                viewBox="0 -960 960 960"
-                width="48px"
-                fill="#fff"
-              >
-                <path
-                  d="M280-160v-60h400v60H280Zm170-170v-356L329-565l-42-42 193-193 193 193-42 42-121-121v356h-60Z"
-                />
-              </svg>
-            </picture>
-            <h3 class="cs-h3">Performance Upgrades</h3>
-            <p class="cs-item-text">
-              Unleash your vehicle's potential with our top-tier performance
-              upgrades. Whether you're looking for more horsepower, or enhanced
-              efficiency, we got you covered.
-            </p>
-          </li>
-          <li class="cs-item">
-            <picture class="cs-icon-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="48px"
-                viewBox="0 -960 960 960"
-                width="48px"
-                fill="#ffffff"
-              >
-                <path
-                  d="M715-360v-60h95q13 0 21.5 8.5T840-390q0 12-8.5 21t-21.5 9h-95Zm0 160v-60h95q13 0 21.5 8.5T840-230q0 12-8.5 21t-21.5 9h-95Zm-155 40q-29 0-49.5-23.5T490-240h-95v-140h95q0-33 20.5-56.5T560-460h125v300H560ZM275-280q-67 0-111-43.5T120-435q0-68 44-111.5T275-590h65q33 0 54-21t21-54q0-33-21-54t-54-21H190q-12 0-21-9t-9-21q0-13 9-21.5t21-8.5h150q58 0 96.5 38.5T475-665q0 58-38.5 96.5T340-530h-65q-42 0-68.5 26T180-435q0 43 26.5 69t68.5 26h90v60h-90Z"
-                />
-              </svg>
-            </picture>
-            <h3 class="cs-h3">Supercharger Installations</h3>
-            <p class="cs-item-text">
-              We install and tune superchargers for various vehicle types.
-              Expect power gains of 30-50% or more depending on your car and
-              chosen system.
-            </p>
-          </li>
-          <li class="cs-item">
-            <picture class="cs-icon-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="48px"
-                viewBox="0 -960 960 960"
-                width="48px"
-                fill="#fff"
-              >
-                <path
-                  d="m393-165 279-335H492l36-286-253 366h154l-36 255Zm-73 85 40-280H160l360-520h80l-40 320h240L400-80h-80Zm154-396Z"
-                />
-              </svg>
-            </picture>
-            <h3 class="cs-h3">Turbocharger Upgrades</h3>
-            <p class="cs-item-text">
-              We offer single and twin-turbo setups for various vehicles. Get
-              expert help in choosing the right turbo size for your goals.
-            </p>
-          </li>
-          <li class="cs-item">
-            <picture class="cs-icon-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="48px"
-                viewBox="0 -960 960 960"
-                width="48px"
-                fill="#fff"
-              >
-                <path
-                  d="M220-400q0 63 28.5 118.5T328-189q-4-12-6-24.5t-2-24.5q0-32 12-60t35-51l113-111 113 111q23 23 35 51t12 60q0 12-2 24.5t-6 24.5q51-37 79.5-92.5T740-400q0-54-23-105.5T651-600q-21 15-44 23.5t-46 8.5q-61 0-101-41.5T420-714v-20q-46 33-83 73t-63 83.5q-26 43.5-40 89T220-400Zm260 24-71 70q-14 14-21.5 31t-7.5 37q0 41 29 69.5t71 28.5q42 0 71-28.5t29-69.5q0-20-7.5-37T551-306l-71-70Zm0-464v132q0 34 23.5 57t57.5 23q18 0 33.5-7.5T622-658l18-22q74 42 117 117t43 163q0 134-93 227T480-80q-134 0-227-93t-93-227q0-128 86-246.5T480-840Z"
-                />
-              </svg>
-            </picture>
-            <h3 class="cs-h3">Dyno Tuning</h3>
-            <p class="cs-item-text">
-              Optimize your vehicle's performance with our precision dyno
-              tuning. Unlock maximum horsepower and torque while enhancing fuel
-              efficiency.
-            </p>
-          </li>
-          <li class="cs-item">
-            <picture class="cs-icon-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="48px"
-                viewBox="0 -960 960 960"
-                width="48px"
-                fill="#ffffff"
-              >
-                <path
-                  d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-240q60 0 117 17.5T704-252q46-46 71-104.5T800-480q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 65 24.5 124T256-252q50-33 107-50.5T480-320Zm0 80q-41 0-80 10t-74 30q35 20 74 30t80 10q41 0 80-10t74-30q-35-20-74-30t-80-10ZM280-520q17 0 28.5-11.5T320-560q0-17-11.5-28.5T280-600q-17 0-28.5 11.5T240-560q0 17 11.5 28.5T280-520Zm120-120q17 0 28.5-11.5T440-680q0-17-11.5-28.5T400-720q-17 0-28.5 11.5T360-680q0 17 11.5 28.5T400-640Zm280 120q17 0 28.5-11.5T720-560q0-17-11.5-28.5T680-600q-17 0-28.5 11.5T640-560q0 17 11.5 28.5T680-520ZM480-400q33 0 56.5-23.5T560-480q0-13-4-25.5T544-528l54-136q7-16 .5-31.5T576-718q-15-7-30.5-.5T524-696l-54 136q-30 5-50 27.5T400-480q0 33 23.5 56.5T480-400Zm0 80Zm0-206Zm0 286Z"
-                />
-              </svg>
-            </picture>
-            <h3 class="cs-h3">Dyno Testing/Pull</h3>
-            <p class="cs-item-text">
-              We use a state-of-the-art dynamometer to measure horsepower and
-              torque at the wheels. Get accurate data instead of relying on
-              guesses about your car's power.
-            </p>
-          </li>
-          <li class="cs-item">
-            <picture class="cs-icon-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="48px"
-                viewBox="0 -960 960 960"
-                width="48px"
-                fill="#ffffff"
-              >
-                <path
-                  d="m229-496-6-49q-20-5-37.5-14.5T154-583l-44 18-30-49 37-35q-5-20-5-39t5-39l-37-35 30-49 44 18q14-14 31.5-23.5T223-831l6-49h60l6 49q20 5 37.5 14.5T364-793l44-18 30 49-38 35q5 19 5 38.5t-5 39.5l38 35-30 49-44-18q-14 15-31.5 24T295-545l-6 49h-60Zm30-100q38 0 65-27t27-65q0-38-27-65t-65-27q-38 0-65 27t-27 65q0 38 27 65t65 27ZM644-40l-14-57q-27-7-51.5-21T536-154l-54 17-38-65 42-38q-8-26-8-54t8-54l-42-37 38-65 54 15q19-21 43-35.5t51-20.5l14-57h75l14 57q29 4 52.5 19t42.5 37l54-15 38 65-42 37q8 26 8 54t-8 54l42 38-38 66-54-18q-18 23-42.5 36.5T733-97l-14 57h-75Zm38-115q58 0 98.5-40.5T821-294q0-58-40.5-98.5T682-433q-58 0-98.5 40.5T543-294q0 58 40.5 98.5T682-155Z"
-                />
-              </svg>
-            </picture>
-            <h3 class="cs-h3">Camshaft Upgrades</h3>
-            <p class="cs-item-text">
-              Boost your engine's power with Camshaft Upgrades. Optimize
-              performance and acceleration like never before!
-            </p>
-          </li>
-
-          <li class="cs-item">
-            <picture class="cs-icon-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="48px"
-                viewBox="0 -960 960 960"
-                width="48px"
-                fill="#fff"
-              >
-                <path
-                  d="m625-674-44-44 60-60H312v-60h329l-60-60 44-44 134 134-134 134ZM180-190h600v-214H180v214Zm105-52q23 0 39-16t16-39q0-23-16-39t-39-16q-23 0-39 16t-16 39q0 23 16 39t39 16Zm390 0q23 0 39-16t16-39q0-23-16-39t-39-16q-23 0-39 16t-16 39q0 23 16 39t39 16ZM120-464h634l-54-163H237l60 60-44 44-134-134 134-134 44 44-60 60h475q14 0 27 11t16 24l85 248v334q0 12-9 21t-21 9h-20q-12 0-21-9t-9-21v-60H200v60q0 12-9 21t-21 9h-20q-12 0-21-9t-9-21v-394Zm60 60v214-214Z"
-                />
-              </svg>
-            </picture>
-            <h3 class="cs-h3">LS Engine Swaps</h3>
-            <p class="cs-item-text">
-              We do custom work includes mounts, wiring, transmission adapters,
-              and computer tuning. Benefit from improved power-to-weight ratio
-              and fuel efficiency.
-            </p>
-          </li>
-        </ul>
       </div>
     </section>
     <!-- ============================================ -->
     <!--                Side By Side                  -->
     <!-- ============================================ -->
 
-    <section id="about">
+    <section id="sbs-1073">
       <div class="cs-container">
-        <img src="img/about.jpg" alt="about" class="about-img" />
+        <div class="cs-image-group">
+          <!--Top left image-->
+          <picture class="cs-picture cs-picture1">
+            <!--Mobile Image-->
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic4.jpg
+              "
+            />
+            <!--Tablet and above Image-->
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic4.jpg
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic4.jpg"
+              alt="mechanic"
+              width="217"
+              height="440"
+            />
+          </picture>
+          <!--Middle image-->
+          <picture class="cs-picture cs-picture2">
+            <!--Mobile Image-->
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic5.jpg
+              "
+            />
+            <!--Tablet and above Image-->
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic5.jpg
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic5.jpg"
+              alt="mechanic"
+              width="305"
+              height="600"
+            />
+          </picture>
+          <!--Bottom right image-->
+          <picture class="cs-picture cs-picture3">
+            <!--Mobile Image-->
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic6.jpg
+              "
+            />
+            <!--Tablet and above Image-->
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic6.jpg
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic6.jpg"
+              alt="mechanic"
+              width="216"
+              height="440"
+            />
+          </picture>
+          <!--Stripe background-->
+          <img
+            class="cs-stripes"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/stripes.svg"
+            alt="stripes"
+            width="509"
+            height="535"
+            aria-hidden="true"
+          />
+        </div>
         <div class="cs-content">
-          <h2 class="cs-title">About Us</h2>
+          <h2 class="cs-title">Services</h2>
           <p class="cs-text">
-            At Next Level Performance & Dyno, we're more than just mechanics –
-            we're performance enthusiasts. Our journey began in 2015 when our
-            founder, Charity & German Aguilar, decided to turn their passion for
-            speed into a mission to help others experience the thrill of actual
-            automotive performance.
+            At Next Level Performance & Dyno, we specialize in auto repair,
+            performance upgrades, and dyno tuning. Whether you're looking to
+            enhance your vehicle with a supercharger, turbocharger, or LS engine
+            swap, our expert technicians are here to help.
           </p>
           <ul class="cs-list">
-            <li class="cs-li">
-              <picture class="cs-li-picture">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="40px"
-                  viewBox="0 -960 960 960"
-                  width="40px"
-                  fill="#D11900"
-                >
-                  <path
-                    d="M42-120v-92q0-34 16-56.5t45-36.5q54-26 115.5-43T358-365q78 0 139.5 17T613-305q29 14 45 36.5t16 56.5v92H42Zm60-60h512v-32q0-15-8.5-24.5T585-251q-43-19-96-36.5T358-305q-78 0-131 17.5T131-251q-12 5-20.5 14.5T102-212v32Zm256-245q-66 0-108-43t-42-107h-10q-8 0-14-6t-6-14q0-8 6-14t14-6h10q0-40 20-72t52-52v39q0 6 4.5 10.5T295-685q7 0 11-4.5t4-10.5v-52q8-2 22-3.5t27-1.5q13 0 27 1.5t22 3.5v52q0 6 4 10.5t11 4.5q6 0 10.5-4.5T438-700v-39q32 20 51 52t19 72h10q8 0 14 6t6 14q0 8-6 14t-14 6h-10q0 64-42 107t-108 43Zm0-60q42 0 66-25t24-65H268q0 40 24 65t66 25Zm302 124-2-29q-7-4-14.5-9T630-409l-26 14-22-32 26-19q-2-4-2-7.5v-15q0-3.5 2-7.5l-26-19 22-32 26 14 14-10q7-5 14-9l2-29h40l2 29q7 4 14 9l14 10 26-14 22 32-26 19q2 4 2 7.5v15q0 3.5-2 7.5l26 19-22 32-26-14q-6 5-13.5 10t-14.5 9l-2 29h-40Zm20-62q16 0 27-11t11-27q0-16-11-27t-27-11q-16 0-27 11t-11 27q0 16 11 27t27 11Zm88-155-9-35q-10-4-20.5-11T721-639l-44 16-20-35 35-28q-2-5-3.5-11t-1.5-12q0-6 1.5-12t3.5-11l-35-28 20-35 44 16q7-8 17.5-15.5T759-805l9-35h38l9 35q10 3 20.5 10.5T853-779l44-16 20 35-35 28q2 5 3.5 11t1.5 12q0 6-1.5 12t-3.5 11l35 28-20 35-44-16q-7 8-17.5 15T815-613l-9 35h-38Zm19-73q25 0 41.5-16.5T845-709q0-25-16.5-41.5T787-767q-25 0-41.5 16.5T729-709q0 25 16.5 41.5T787-651ZM358-180Z"
-                  />
-                </svg>
-              </picture>
-              <div class="cs-flex">
-                <h3 class="cs-h3">
-                  Comprehensive Maintenance & Preventative Services
-                </h3>
-                <p class="cs-li-text">
-                  We don't just focus on performance upgrades. Our team excels
-                  in providing thorough maintenance and preventative services to
-                  keep your vehicle running at its best. We ensure your car
-                  stays in top condition, preventing costly breakdowns and
-                  extending its lifespan.
-                </p>
-              </div>
-            </li>
-            <li class="cs-li">
-              <picture class="cs-li-picture">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="40px"
-                  viewBox="0 -960 960 960"
-                  width="40px"
-                  fill="#D11900"
-                >
-                  <path
-                    d="M163.67-120v-102.67h126L185-575.33q-30.33-15-48.17-41.67Q119-643.67 119-682.67q0-48 34.67-82.66Q188.33-800 236.33-800q42.34 0 71.84 23.17 29.5 23.16 40.16 60.83h140v-52.67q0-13.66 9.84-23.5Q508-802 521.67-802q10.33 0 18.16 7 7.84 7 9.84 17l72.66-69.33q8.34-8.34 20.84-10.84t25.16 3.5L825.67-780q10 5.33 13.83 15.17 3.83 9.83-1.17 20.16Q833-734 822.83-731.5 812.67-729 803-734l-151.33-72L555-710.67v53.34L651.67-560 803-632.67q10.33-5 20.33-2 10 3 15 13.34 5.34 10.66 1.34 21-4 10.33-14.67 15.66L671-512q-13.33 6.67-26.17 5.5-12.83-1.17-22.5-10.83l-72.66-69.34q-2 11.34-9.84 17.67-7.83 6.33-18.16 6.33-13.67 0-23.5-9.83-9.84-9.83-9.84-23.5v-53.33H347q-1 10.66-6.5 21.33-5.5 10.67-13.5 18.67l203.33 386.66h153.34V-120h-520Zm72.66-512q21.67 0 36.17-14.5t14.5-36.17q0-21.66-14.5-36.16-14.5-14.5-36.17-14.5-21.66 0-36.16 14.5-14.5 14.5-14.5 36.16 0 21.67 14.5 36.17t36.16 14.5ZM361-222.67h94L271.67-574q-2 1.33-7.34 2.67-5.33 1.33-8 2L361-222.67Zm94 0Z"
-                  />
-                </svg>
-              </picture>
-              <div class="cs-flex">
-                <h3 class="cs-h3">Newest Tools and Machines</h3>
-                <p class="cs-li-text">
-                  At Next Level Performance & Dyno, we use the latest equipment.
-                  Our shop has modern dynos, advanced computers, and precision
-                  tools. This allows us to work effectively on all types of
-                  cars, ensuring great results every time.
-                </p>
-              </div>
-            </li>
-            <li class="cs-li">
-              <picture class="cs-li-picture">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="40px"
-                  viewBox="0 -960 960 960"
-                  width="40px"
-                  fill="#D11900"
-                >
-                  <path
-                    d="M186.67-80q-27 0-46.84-19.83Q120-119.67 120-146.67v-600q0-27 19.83-46.83 19.84-19.83 46.84-19.83h56.66V-880h70v66.67h333.34V-880h70v66.67h56.66q27 0 46.84 19.83Q840-773.67 840-746.67v600q0 27-19.83 46.84Q800.33-80 773.33-80H186.67Zm0-66.67h586.66v-420H186.67v420Zm0-486.66h586.66v-113.34H186.67v113.34Zm0 0v-113.34 113.34ZM480-400q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"
-                  />
-                </svg>
-              </picture>
-              <div class="cs-flex">
-                <h3 class="cs-h3">Custom Plans for Every Car</h3>
-                <p class="cs-li-text">
-                  We don't use one-size-fits-all solutions. We listen to your
-                  goals and budget, then make a plan just for you. We tailor our
-                  work to your needs, from minor upgrades to complete rebuilds.
-                </p>
-              </div>
-            </li>
+            <li class="cs-li">Auto Repair/Maintenance</li>
+            <li class="cs-li">Turbocharger Upgrades</li>
+            <li class="cs-li">Performance Upgrades</li>
+            <li class="cs-li">Camshaft Upgrades</li>
+            <li class="cs-li">LS Engine Swaps</li>
+            <li class="cs-li">Dyno Tuning</li>
+            <li class="cs-li">Dyno Testing/Pull</li>
+            <li class="cs-li">Supercharger Installations</li>
           </ul>
+          <a class="cs-link" href="tel:8653502700">
+            <picture class="cs-wrapper">
+              <img
+                class="cs-icon"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/white-phone.svg"
+                alt="icon"
+                width="24"
+                height="24"
+              />
+            </picture>
+            <div class="cs-info">
+              <span class="cs-header">Call Us</span>
+              <span class="cs-link-content">+1(865) 350-2700</span>
+            </div>
+          </a>
         </div>
       </div>
+    </section>
+    <!-- ============================================ -->
+    <!--                   Steps                      -->
+    <!-- ============================================ -->
+
+    <section id="steps-1172">
+      <div class="cs-container">
+        <div class="cs-content">
+          <h2 class="cs-title">What Makes Us Different</h2>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="40px"
+                fill="#d11a00"
+              >
+                <path
+                  d="M434.67-227.33 295.33-366l47.34-47.33 92 90.66 178.66-178.66 47.34 48-226 226ZM186.67-80q-27 0-46.84-19.83Q120-119.67 120-146.67v-600q0-27 19.83-46.83 19.84-19.83 46.84-19.83h56.66V-880h70v66.67h333.34V-880h70v66.67h56.66q27 0 46.84 19.83Q840-773.67 840-746.67v600q0 27-19.83 46.84Q800.33-80 773.33-80H186.67Zm0-66.67h586.66v-420H186.67v420Zm0-486.66h586.66v-113.34H186.67v113.34Zm0 0v-113.34 113.34Z"
+                />
+              </svg>
+            </picture>
+            <h3 class="cs-h3">Personalized Plans</h3>
+            <p class="cs-item-text">
+              From minor upgrades to complete rebuilds, our tailored approach
+              ensures your vehicle receives the specific attention it requires.
+            </p>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="40px"
+                fill="#d11a00"
+              >
+                <path
+                  d="M295.33-726v-47.33q0-27 19.84-46.84Q335-840 362-840h234.67q27 0 46.83 19.83 19.83 19.84 19.83 46.84V-726h52q20 0 36.84 10.83Q769-704.33 776-687.33l96.67 226.66q3.66 8 5.5 18.23Q880-432.22 880-422v195.33q0 27-19.83 46.84Q840.33-160 813.33-160H146.67q-27 0-46.84-19.83Q80-199.67 80-226.67V-422q0-10.22 1.83-20.44 1.84-10.23 5.5-18.23l95.34-226.66q7-17 23.83-27.84Q223.33-726 243.33-726h52Zm66.67 0h234.67v-47.33H362V-726Zm-79.33 253.33v-44h66.66v44h261.34v-44h66.66v44H794l-78-186.66H244l-78 186.66h116.67Zm0 66.67h-136v179.33h666.66V-406h-136v44h-66.66v-44H349.33v44h-66.66v-44ZM480-439.33Zm0-33.34Zm0 66.67Z"
+                />
+              </svg>
+            </picture>
+            <h3 class="cs-h3">Cutting-Edge Tools</h3>
+            <p class="cs-item-text">
+              We pride ourselves on using the latest technology and equipment.
+              Our facility is outfitted with modern dynos and precision tools.
+            </p>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="40px"
+                fill="#d11a00"
+              >
+                <path
+                  d="M764-120 523.67-360.33l66-66L830-186l-66 66Zm-571.33 0-66-66L412-471.33l-94-94-24.67 24.66L247-587v84l-25.33 25.33L100-599.33l25.33-25.34H210l-48.67-48.66L296-808q18-18 39-25t45-7q24 0 45 8.67 21 8.66 39 26.66l-102 102L410.67-654l-25.34 25.33 92 92L588.67-648q-6.67-12.33-10.5-27.67-3.84-15.33-3.84-32 0-55 39.17-94.16Q652.67-841 707.67-841q15 0 26.5 3t20.83 8.33L665.33-740l74 74L829-755.67q5.67 10 8.83 22.17 3.17 12.17 3.17 27.17 0 55-39.17 94.16Q762.67-573 707.67-573q-16 0-28.67-2.33-12.67-2.34-23.67-7.34L192.67-120Z"
+                />
+              </svg>
+            </picture>
+            <h3 class="cs-h3">Extensive Maintenance</h3>
+            <p class="cs-item-text">
+              By focusing on maintaining your car in peak condition, we help
+              prevent expensive repairs and extend its lifespan.
+            </p>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="40px"
+                fill="#d11a00"
+              >
+                <path
+                  d="M624-528.67q23.33 0 39.67-16.33Q680-561.33 680-584.67q0-23.33-16.33-39.66-16.34-16.34-39.67-16.34-23.33 0-39.67 16.34Q568-608 568-584.67q0 23.34 16.33 39.67 16.34 16.33 39.67 16.33Zm-288 0q23.33 0 39.67-16.33Q392-561.33 392-584.67q0-23.33-16.33-39.66-16.34-16.34-39.67-16.34-23.33 0-39.67 16.34Q280-608 280-584.67q0 23.34 16.33 39.67 16.34 16.33 39.67 16.33Zm144 268q66.67 0 122.17-36.5t80.5-98.16H626q-22.67 39-61.5 60.5t-84.17 21.5q-45.33 0-84.5-21.17-39.16-21.17-61.16-60.83h-57.34q25.67 61.66 80.84 98.16 55.16 36.5 121.83 36.5ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 333.33q139.58 0 236.46-96.87 96.87-96.88 96.87-236.46t-96.87-236.46Q619.58-813.33 480-813.33t-236.46 96.87Q146.67-619.58 146.67-480t96.87 236.46q96.88 96.87 236.46 96.87Z"
+                />
+              </svg>
+            </picture>
+            <h3 class="cs-h3">Customer Satisfaction</h3>
+            <p class="cs-item-text">
+              We strive to exceed your expectations by providing high-quality
+              services and ensuring your complete satisfaction.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <!--Tire Screech-->
+      <img
+        class="cs-graphic"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/tire-mark.svg"
+        alt="icon"
+        width="840"
+        height="357"
+        loading="lazy"
+        decoding="async"
+        aria-hidden="true"
+      />
     </section>
 
     <!-- ============================================ -->
@@ -545,134 +515,49 @@
       </div>
     </section>
     <!-- ============================================ -->
-    <!--                   Contact                    -->
+    <!--                     CTA                      -->
     <!-- ============================================ -->
 
-    <section id="contact">
+    <section id="cta-1071">
       <div class="cs-container">
         <div class="cs-content">
-          <h2 class="cs-title">Contact Us</h2>
-          <!--Form-->
-          <form
-            class="cs-form"
-            id="cs-form-1105"
-            name="Contact Form"
-            method="post"
-            data-netlify="true"
-          >
-            <label class="cs-label">
-              Name
-              <input
-                class="cs-input"
-                required
-                type="text"
-                id="name-1105"
-                name="name"
-                placeholder="Name"
-              />
-            </label>
-            <label class="cs-label cs-email">
-              Email
-              <input
-                class="cs-input"
-                required
-                type="email"
-                id="email-1105"
-                name="email"
-                placeholder="Email"
-              />
-            </label>
-            <label class="cs-label cs-phone">
-              Phone
-              <input
-                class="cs-input"
-                required
-                type="phone"
-                id="phone-1105"
-                name="phone"
-                placeholder="Phone"
-              />
-            </label>
-            <label class="cs-label">
-              Tell us about your project
-              <textarea
-                class="cs-input cs-textarea"
-                required
-                name="Message"
-                id="message-1105"
-                placeholder="Write message..."
-              ></textarea>
-            </label>
-            <button class="cs-button-solid cs-submit" type="submit">
-              GET STARTED
-            </button>
-          </form>
+          <div class="cs-flex">
+            <h2 class="cs-title">Get In Touch With Us!</h2>
+          </div>
+          <div class="cs-button-box">
+            <a href="contact.html" class="cs-button-solid">GET STARTED</a>
+            <a href="services.html" class="cs-button-transparent"
+              >VIEW OUR SERVICES</a
+            >
+          </div>
         </div>
-        <ul class="cs-ul">
-          <li class="cs-li">
-            <picture class="cs-icon-wrapper">
-              <img
-                aria-hidden="true"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-phone.svg"
-                alt="phone icon"
-                class="cs-icon"
-                width="40"
-                height="40"
-                decoding="async"
-              />
-            </picture>
-            <div class="cs-flex-group">
-              <span class="cs-header">Phone</span>
-              <a
-                href="tel:18653502700
-                  "
-                class="cs-link"
-                >+1(865) 350-2700
-              </a>
-            </div>
-          </li>
-          <li class="cs-li">
-            <picture class="cs-icon-wrapper">
-              <img
-                aria-hidden="true"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-email.svg"
-                alt="mail icon"
-                class="cs-icon"
-                width="40"
-                height="40"
-                decoding="async"
-              />
-            </picture>
-            <div class="cs-flex-group">
-              <span class="cs-header">Email</span>
-              <a href="mailto:info@nextlevelperformancedyno.com" class="cs-link"
-                >info@nextlevelperformancedyno.com</a
-              >
-            </div>
-          </li>
-          <li class="cs-li">
-            <picture class="cs-icon-wrapper">
-              <img
-                aria-hidden="true"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-pin.svg"
-                alt="address icon"
-                class="cs-icon"
-                width="40"
-                height="40"
-                decoding="async"
-              />
-            </picture>
-            <div class="cs-flex-group">
-              <span class="cs-header">Address</span>
-              <a href="#" class="cs-link" style="pointer-events: none"
-                >911 E Hwy 11 E,<br />
-                Jefferson City, TN 37760</a
-              >
-            </div>
-          </li>
-        </ul>
       </div>
+      <picture class="cs-background">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic3.jpg
+          "
+        />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic3.jpg
+          "
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic3.jpg"
+          alt="mechanic"
+          width="1280"
+          height="568"
+        />
+      </picture>
     </section>
+
     <!-- ============================================ -->
     <!--                    FAQ                       -->
     <!-- ============================================ -->
