@@ -12,11 +12,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/dark.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
+    <link rel="stylesheet" href="css/swiper/core.css" />
+    <link rel="stylesheet" href="css/swiper/hero.css" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -117,31 +114,89 @@
     <!-- ============================================ -->
 
     <section id="home">
-      <div class="cs-container">
-        <div class="cs-content">
-          <h1 class="cs-title">Take Your Ride <br />to the Next Level</h1>
-          <p class="cs-text">
-            Turn your premium ride into a thrilling powerhouse with Next Level
-            Performance & Dyno.
-          </p>
-          <a href="contact.html" class="cs-button-solid">GET A QUOTE </a>
+      <div class="swiper swiper-hero">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="cs-container">
+              <div class="cs-content">
+                <h1 class="cs-title">Take Your Ride <br />to the Next Level</h1>
+                <p class="cs-text">
+                  Turn your premium ride into a thrilling powerhouse with Next
+                  Level Performance & Dyno.
+                </p>
+                <a href="contact.html" class="cs-button-solid">GET A QUOTE </a>
+              </div>
+              <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="img/dyno.jpeg" />
+                <source media="(min-width: 601px)" srcset="img/dyno.jpeg" />
+                <img
+                  decoding="async"
+                  src="img/dyno.jpeg"
+                  alt="mechanic"
+                  width="2250"
+                  height="1500"
+                  aria-hidden="true"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cs-container">
+              <div class="cs-content">
+                <h1 class="cs-title">Free Tow Service Available</h1>
+                <p class="cs-text">
+                  We offer free tow service within a 10-mile if you have the
+                  work done at our shop.
+                </p>
+                <a href="contact.html" class="cs-button-solid">GET A QUOTE </a>
+              </div>
+              <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="img/tow.jpeg" />
+                <source media="(min-width: 601px)" srcset="img/tow.jpeg" />
+                <img
+                  decoding="async"
+                  src="img/tow.jpeg"
+                  alt="mechanic"
+                  width="2250"
+                  height="1500"
+                  aria-hidden="true"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cs-container">
+              <div class="cs-content">
+                <h1 class="cs-title">10+ Years of Expert Auto Repair</h1>
+                <p class="cs-text">
+                  Your vehicle is in good hands! Our expert mechanics bring over
+                  a decade of experience to every repair.
+                </p>
+                <a href="contact.html" class="cs-button-solid">GET A QUOTE </a>
+              </div>
+              <picture class="cs-background">
+                <source
+                  media="(max-width: 600px)"
+                  srcset="img/auto-repair.jpg"
+                />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="img/auto-repair.jpg"
+                />
+                <img
+                  decoding="async"
+                  src="img/auto-repair.jpg"
+                  alt="mechanic"
+                  width="2250"
+                  height="1500"
+                  aria-hidden="true"
+                />
+              </picture>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
-
-      <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="img/hero-2.jpeg" />
-        <source media="(min-width: 601px)" srcset="img/hero-2.jpeg" />
-        <img
-          decoding="async"
-          src="img/hero-2.jpeg"
-          alt="mechanic"
-          width="2250"
-          height="1500"
-          aria-hidden="true"
-        />
-      </picture>
-
-      <!-- Background Image -->
     </section>
     <!-- ============================================ -->
     <!--                  Car Brands                  -->
@@ -179,94 +234,18 @@
 
     <section id="sbs-1073">
       <div class="cs-container">
-        <div class="cs-image-group">
-          <!--Top left image-->
-          <picture class="cs-picture cs-picture1">
-            <!--Mobile Image-->
-            <source
-              media="(max-width: 600px)"
-              srcset="
-                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic4.jpg
-              "
-            />
-            <!--Tablet and above Image-->
-            <source
-              media="(min-width: 601px)"
-              srcset="
-                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic4.jpg
-              "
-            />
-            <img
-              loading="lazy"
-              decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic4.jpg"
-              alt="mechanic"
-              width="217"
-              height="440"
-            />
-          </picture>
-          <!--Middle image-->
-          <picture class="cs-picture cs-picture2">
-            <!--Mobile Image-->
-            <source
-              media="(max-width: 600px)"
-              srcset="
-                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic5.jpg
-              "
-            />
-            <!--Tablet and above Image-->
-            <source
-              media="(min-width: 601px)"
-              srcset="
-                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic5.jpg
-              "
-            />
-            <img
-              loading="lazy"
-              decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic5.jpg"
-              alt="mechanic"
-              width="305"
-              height="600"
-            />
-          </picture>
-          <!--Bottom right image-->
-          <picture class="cs-picture cs-picture3">
-            <!--Mobile Image-->
-            <source
-              media="(max-width: 600px)"
-              srcset="
-                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic6.jpg
-              "
-            />
-            <!--Tablet and above Image-->
-            <source
-              media="(min-width: 601px)"
-              srcset="
-                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic6.jpg
-              "
-            />
-            <img
-              loading="lazy"
-              decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic6.jpg"
-              alt="mechanic"
-              width="216"
-              height="440"
-            />
-          </picture>
-          <!--Stripe background-->
-          <img
-            class="cs-stripes"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/stripes.svg"
-            alt="stripes"
-            width="509"
-            height="535"
-            aria-hidden="true"
-          />
-        </div>
+        <video
+          controls
+          autoplay
+          loop
+          muted
+          playsinline
+          height="auto"
+          loading="lazy"
+        >
+          <source src="img/dyno-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div class="cs-content">
           <h2 class="cs-title">Services</h2>
           <p class="cs-text">
@@ -932,7 +911,7 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <!-- <script src="js/swiper.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper/core.js"></script>
+    <script src="js/swiper/hero.js"></script>
   </body>
 </html>

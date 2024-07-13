@@ -7,10 +7,6 @@
   #home {
     /* Centers button */
     text-align: left;
-    /* 200px - 300px - leaving extra space for the navigation */
-    padding: clamp(12.5rem, 31.95vw, 18.75rem) 1rem 0;
-    /* 130px - 200px */
-    padding-bottom: clamp(8.125rem, 16.5vw, 12.5rem);
     position: relative;
     z-index: 1;
   }
@@ -2545,22 +2541,30 @@
 @media only screen and (min-width: 0rem) {
   #sbs-1073 {
     padding: var(--sectionPadding);
+    position: relative;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
   #sbs-1073 .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 34.375rem;
-    margin: auto;
+    /* margin-right: 20vw; */
     display: flex;
     flex-direction: column;
     align-items: center;
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
+
+  #sbs-1073 .cs-container video {
+    width: 100%;
+  }
   #sbs-1073 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
+    padding: 0 1rem;
     /* changes to 433px at desktop */
     max-width: 33.875rem;
     display: flex;
@@ -2711,13 +2715,20 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #sbs-1073 .cs-container {
-    max-width: 80rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 100rem;
+    width: 92%;
+  }
+
+  #sbs-1073 .cs-container video {
+    width: 60%;
   }
   #sbs-1073 .cs-content {
-    max-width: 27.0625rem;
+    max-width: none;
+    width: 40%;
+    padding: 0rem;
   }
   #sbs-1073 .cs-image-group {
     font-size: min(1.2vw, 1em);
