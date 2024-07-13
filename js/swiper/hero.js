@@ -6,9 +6,9 @@ var swiper = new Swiper('.swiper-hero', {
     clickable: true,
   },
   effect: 'coverflow',
-  autoplay: {
-    delay: 5000,
-    pauseOnMouseEnter: false,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  //   pauseOnMouseEnter: false,
+  // },
   loop: true,
 })

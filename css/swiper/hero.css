@@ -6,9 +6,15 @@
 }
 
 .swiper-pagination {
-  margin-bottom: 6rem !important;
+  margin-bottom: 4rem !important;
+}
+
+.swiper-pagination-bullet {
+  opacity: 0.3 !important;
+  background-color: #fff !important;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #fff !important;
+  opacity: 1 !important;
 }
