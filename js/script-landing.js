@@ -44,3 +44,11 @@ document.querySelector('form').addEventListener('submit', handleSubmit)
 
 // Set the current year in the footer
 document.getElementById('current-year').textContent = new Date().getFullYear()
+// Go back to previous page
+document.addEventListener('DOMContentLoaded', (event) => {
+  const urlParams = new URLSearchParams(window.location.search)
+  if (urlParams.get('clearForm') === 'true') {
+    // Assuming you have a form with an id of 'contactForm'
+    document.getElementById('cs-form-1105').reset()
+  }
+})
