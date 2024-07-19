@@ -48,15 +48,15 @@
           />
         </a>
         <!--Navigation List-->
-        <nav class="cs-nav" role="navigation">
+        <nav class="cs-nav">
           <!--Mobile Nav Toggle-->
-          <button class="cs-toggle" aria-label="mobile menu toggle">
+          <div class="cs-toggle" aria-label="mobile menu toggle">
             <div class="cs-box" aria-hidden="true">
               <span class="cs-line cs-line1" aria-hidden="true"></span>
               <span class="cs-line cs-line2" aria-hidden="true"></span>
               <span class="cs-line cs-line3" aria-hidden="true"></span>
             </div>
-          </button>
+          </div>
           <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
           <div class="cs-ul-wrapper">
             <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
@@ -228,7 +228,7 @@
     <section class="brands">
       <div class="cs-container">
         <h2 class="cs-title">Worked With</h2>
-        <div class="cs-brand-list">
+        <ul class="cs-brand-list">
           <li class="cs-brand-item">
             <img src="img/brands/corvette.webp" alt="corvette logo" />
           </li>
@@ -249,7 +249,7 @@
               style="width: 35%"
             />
           </li>
-        </div>
+        </ul>
       </div>
     </section>
     <!-- ============================================ -->
@@ -258,15 +258,7 @@
 
     <section id="sbs-1073">
       <div class="cs-container">
-        <video
-          controls
-          autoplay
-          loop
-          muted
-          playsinline
-          height="auto"
-          loading="lazy"
-        >
+        <video controls autoplay loop muted playsinline height="480">
           <source src="img/dyno-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -319,7 +311,7 @@
         </div>
         <ul class="cs-card-group">
           <li class="cs-item">
-            <picture class="cs-picture">
+            <div class="cs-picture">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="40px"
@@ -331,7 +323,7 @@
                   d="M434.67-227.33 295.33-366l47.34-47.33 92 90.66 178.66-178.66 47.34 48-226 226ZM186.67-80q-27 0-46.84-19.83Q120-119.67 120-146.67v-600q0-27 19.83-46.83 19.84-19.83 46.84-19.83h56.66V-880h70v66.67h333.34V-880h70v66.67h56.66q27 0 46.84 19.83Q840-773.67 840-746.67v600q0 27-19.83 46.84Q800.33-80 773.33-80H186.67Zm0-66.67h586.66v-420H186.67v420Zm0-486.66h586.66v-113.34H186.67v113.34Zm0 0v-113.34 113.34Z"
                 />
               </svg>
-            </picture>
+            </div>
             <h3 class="cs-h3">Personalized Plans</h3>
             <p class="cs-item-text">
               From minor upgrades to complete rebuilds, our tailored approach
@@ -339,7 +331,7 @@
             </p>
           </li>
           <li class="cs-item">
-            <picture class="cs-picture">
+            <div class="cs-picture">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="40px"
@@ -351,7 +343,7 @@
                   d="M295.33-726v-47.33q0-27 19.84-46.84Q335-840 362-840h234.67q27 0 46.83 19.83 19.83 19.84 19.83 46.84V-726h52q20 0 36.84 10.83Q769-704.33 776-687.33l96.67 226.66q3.66 8 5.5 18.23Q880-432.22 880-422v195.33q0 27-19.83 46.84Q840.33-160 813.33-160H146.67q-27 0-46.84-19.83Q80-199.67 80-226.67V-422q0-10.22 1.83-20.44 1.84-10.23 5.5-18.23l95.34-226.66q7-17 23.83-27.84Q223.33-726 243.33-726h52Zm66.67 0h234.67v-47.33H362V-726Zm-79.33 253.33v-44h66.66v44h261.34v-44h66.66v44H794l-78-186.66H244l-78 186.66h116.67Zm0 66.67h-136v179.33h666.66V-406h-136v44h-66.66v-44H349.33v44h-66.66v-44ZM480-439.33Zm0-33.34Zm0 66.67Z"
                 />
               </svg>
-            </picture>
+            </div>
             <h3 class="cs-h3">Cutting-Edge Tools</h3>
             <p class="cs-item-text">
               We pride ourselves on using the latest technology and equipment.
@@ -359,7 +351,7 @@
             </p>
           </li>
           <li class="cs-item">
-            <picture class="cs-picture">
+            <div class="cs-picture">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="40px"
@@ -371,7 +363,7 @@
                   d="M764-120 523.67-360.33l66-66L830-186l-66 66Zm-571.33 0-66-66L412-471.33l-94-94-24.67 24.66L247-587v84l-25.33 25.33L100-599.33l25.33-25.34H210l-48.67-48.66L296-808q18-18 39-25t45-7q24 0 45 8.67 21 8.66 39 26.66l-102 102L410.67-654l-25.34 25.33 92 92L588.67-648q-6.67-12.33-10.5-27.67-3.84-15.33-3.84-32 0-55 39.17-94.16Q652.67-841 707.67-841q15 0 26.5 3t20.83 8.33L665.33-740l74 74L829-755.67q5.67 10 8.83 22.17 3.17 12.17 3.17 27.17 0 55-39.17 94.16Q762.67-573 707.67-573q-16 0-28.67-2.33-12.67-2.34-23.67-7.34L192.67-120Z"
                 />
               </svg>
-            </picture>
+            </div>
             <h3 class="cs-h3">Extensive Maintenance</h3>
             <p class="cs-item-text">
               By focusing on maintaining your car in peak condition, we help
@@ -379,7 +371,7 @@
             </p>
           </li>
           <li class="cs-item">
-            <picture class="cs-picture">
+            <div class="cs-picture">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="40px"
@@ -391,7 +383,7 @@
                   d="M624-528.67q23.33 0 39.67-16.33Q680-561.33 680-584.67q0-23.33-16.33-39.66-16.34-16.34-39.67-16.34-23.33 0-39.67 16.34Q568-608 568-584.67q0 23.34 16.33 39.67 16.34 16.33 39.67 16.33Zm-288 0q23.33 0 39.67-16.33Q392-561.33 392-584.67q0-23.33-16.33-39.66-16.34-16.34-39.67-16.34-23.33 0-39.67 16.34Q280-608 280-584.67q0 23.34 16.33 39.67 16.34 16.33 39.67 16.33Zm144 268q66.67 0 122.17-36.5t80.5-98.16H626q-22.67 39-61.5 60.5t-84.17 21.5q-45.33 0-84.5-21.17-39.16-21.17-61.16-60.83h-57.34q25.67 61.66 80.84 98.16 55.16 36.5 121.83 36.5ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 333.33q139.58 0 236.46-96.87 96.87-96.88 96.87-236.46t-96.87-236.46Q619.58-813.33 480-813.33t-236.46 96.87Q146.67-619.58 146.67-480t96.87 236.46q96.88 96.87 236.46 96.87Z"
                 />
               </svg>
-            </picture>
+            </div>
             <h3 class="cs-h3">Customer Satisfaction</h3>
             <p class="cs-item-text">
               We strive to exceed your expectations by providing high-quality
@@ -699,7 +691,7 @@
     <!--                   Mobile Call                -->
     <!-- ============================================ -->
     <a href="tel:18653502700">
-      <section class="mobile-call">
+      <div class="mobile-call">
         <img
           class="cs-icon"
           aria-hidden="true"
@@ -710,7 +702,7 @@
           width="24"
           height="24"
         />
-      </section>
+      </div>
     </a>
 
     <!-- ============================================ -->
