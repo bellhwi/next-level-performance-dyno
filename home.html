@@ -31,6 +31,17 @@
         phone_conversion_number: '+1(865) 350-2700',
       })
     </script>
+    <!-- Event snippet for Clicks to call from website conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion_click_to_call() {
+        gtag('event', 'conversion', {
+          send_to: 'AW-11193323869/3E-rCM2L08gZEN2istkp',
+          event_callback: callback,
+        })
+        return false
+      }
+    </script>
   </head>
   <body class="dark-mode">
     <!-- ============================================ -->
